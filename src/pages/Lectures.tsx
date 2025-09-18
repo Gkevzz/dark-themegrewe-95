@@ -138,6 +138,54 @@ const Lectures = () => {
           </CardContent>
         </Card>
 
+        {/* What we offer */}
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle className="font-display text-xl sm:text-2xl text-foreground">
+              Vad vi erbjuder
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              <div className="space-y-3">
+                <h3 className="font-display text-lg font-semibold text-foreground">
+                  Föreläsningar
+                </h3>
+                <p className="font-body text-sm text-muted-foreground">
+                  45-90 minuter anpassade efter er målgrupp och era behov
+                </p>
+              </div>
+              
+              <div className="space-y-3">
+                <h3 className="font-display text-lg font-semibold text-foreground">
+                  Digitala föreläsningar
+                </h3>
+                <p className="font-body text-sm text-muted-foreground">
+                  Online-föreläsningar för organisationer över hela landet
+                </p>
+              </div>
+              
+              <div className="space-y-3">
+                <h3 className="font-display text-lg font-semibold text-foreground">
+                  Samtal med anhöriga
+                </h3>
+                <p className="font-body text-sm text-muted-foreground">
+                  Stöd och vägledning för familjer och närstående
+                </p>
+              </div>
+              
+              <div className="space-y-3">
+                <h3 className="font-display text-lg font-semibold text-foreground">
+                  1-on-1 mentorskap
+                </h3>
+                <p className="font-body text-sm text-muted-foreground">
+                  Personlig vägledning för unga som vill förändra sitt liv
+                </p>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Target Audiences */}
         <Card className="shadow-soft">
           <CardHeader>

@@ -138,19 +138,28 @@ const Contact = () => {
               
               <div className="space-y-3">
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  Workshops
+                  Digitala föreläsningar
                 </h3>
                 <p className="font-body text-sm text-muted-foreground">
-                  Interaktiva sessioner med djupare diskussion och reflektion
+                  Online-föreläsningar för organisationer över hela landet
                 </p>
               </div>
               
               <div className="space-y-3">
                 <h3 className="font-display text-lg font-semibold text-foreground">
-                  Panelsamtal
+                  Samtal med anhöriga
                 </h3>
                 <p className="font-body text-sm text-muted-foreground">
-                  Deltagande i diskussioner tillsammans med andra experter
+                  Stöd och vägledning för familjer och närstående
+                </p>
+              </div>
+              
+              <div className="space-y-3">
+                <h3 className="font-display text-lg font-semibold text-foreground">
+                  1-on-1 mentorskap
+                </h3>
+                <p className="font-body text-sm text-muted-foreground">
+                  Personlig vägledning för unga som vill förändra sitt liv
                 </p>
               </div>
             </div>
