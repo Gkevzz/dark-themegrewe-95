@@ -28,16 +28,16 @@ const About = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         
         {/* Content */}
-        <div className="relative z-10 h-full flex items-start pt-16 md:items-center md:pt-0 justify-center">
+        <div className="relative z-10 h-full flex items-center justify-center">
           <div className="text-center space-y-2 md:space-y-4 px-4 max-w-4xl mx-auto">
-            <p className="font-body text-lg md:text-xl text-cream-light">
-              Författare & Föreläsare
-            </p>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-bold text-cream-light leading-tight">
+            <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Viktor Grewe
             </h1>
-            <p className="font-display text-xl md:text-2xl lg:text-3xl text-cream-medium font-normal">
-              Från utanförskap till engagemang
+            <p className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl text-accent font-semibold">
+              Författare & Föreläsare
+            </p>
+            <p className="font-body text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-lg mx-auto px-4 mt-4 md:mt-6">
+              Inspirerande föreläsningar och en gripande självbiografi om vägen från kriminalitet till ett meningsfullt liv.
             </p>
           </div>
         </div>

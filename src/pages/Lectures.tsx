@@ -15,7 +15,7 @@ const Lectures = () => {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="space-y-6">
               <Badge variant="secondary" className="w-fit font-body mx-auto">
-                Föreläsningar & Workshops
+                Föreläsningar & Tjänster
               </Badge>
               <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-cream-light leading-tight">
                 Boka Viktor Grewe
