@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -6,6 +7,19 @@ import authorHeroDesktop from "@/assets/author-hero-desktop.webp";
 import authorHeroMobile from "@/assets/author-hero-mobile.webp";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "Om Viktor Grewe - Författare till Avhopparen | Föreläsare & Socialpedagog";
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Viktor Grewe - från kriminalitet till socialpedagog. Författare till boken Avhopparen. Arbetar med KRIS och frivården för att hjälpa unga lämna utanförskap.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Viktor Grewe - från kriminalitet till socialpedagog. Författare till boken Avhopparen. Arbetar med KRIS och frivården för att hjälpa unga lämna utanförskap.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -15,12 +29,12 @@ const About = () => {
         {/* Background Images */}
         <img 
           src={authorHeroMobile}
-          alt="Viktor Grewe"
+          alt="Viktor Grewe - författare och föreläsare om kriminalitet och utanförskap"
           className="absolute inset-0 w-full h-full object-cover block md:hidden"
         />
         <img 
           src={authorHeroDesktop}
-          alt="Viktor Grewe"
+          alt="Viktor Grewe - författare till Avhopparen och föreläsare"
           className="absolute inset-0 w-full h-full object-cover hidden md:block"
         />
         
@@ -28,15 +42,15 @@ const About = () => {
         <div className="absolute inset-0 bg-black/40"></div>
         
         {/* Content */}
-        <div className="relative z-10 h-full flex items-center justify-center">
-          <div className="text-center space-y-2 md:space-y-4 px-4 max-w-4xl mx-auto">
-            <h1 className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
+        <div className="relative z-10 h-full flex items-start pt-20 sm:pt-24 md:items-center md:pt-0 justify-center">
+          <div className="text-center space-y-3 sm:space-y-2 md:space-y-4 px-4 max-w-4xl mx-auto">
+            <h1 className="font-display text-4xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Viktor Grewe
             </h1>
-            <p className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl text-accent font-semibold">
+            <p className="font-display text-2xl sm:text-2xl md:text-3xl lg:text-4xl text-accent font-semibold">
               Författare & Föreläsare
             </p>
-            <p className="font-body text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-lg mx-auto px-4 mt-4 md:mt-6">
+            <p className="font-body text-lg sm:text-lg md:text-xl lg:text-2xl text-white/90 leading-relaxed max-w-lg mx-auto px-4 mt-3 md:mt-6">
               Från utanförskap till engagemang
             </p>
           </div>

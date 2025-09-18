@@ -1,8 +1,22 @@
+import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
+  useEffect(() => {
+    document.title = "Viktor Grewe - Författare & Föreläsare | Vägen från kriminalitet till förändring";
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Viktor Grewe - författare, föreläsare och socialpedagog. Läs om hans resa från utanförskap och kriminalitet till mentorskap och förebyggande arbete.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Viktor Grewe - författare, föreläsare och socialpedagog. Läs om hans resa från utanförskap och kriminalitet till mentorskap och förebyggande arbete.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

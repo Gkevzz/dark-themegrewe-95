@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -6,6 +7,18 @@ import bookCover from "@/assets/avhopparen-en-sann-berattelse.jpg";
 import Navigation from "@/components/Navigation";
 
 const Book = () => {
+  useEffect(() => {
+    document.title = "Avhopparen - En sann berättelse av Viktor Grewe | Bok om kriminalitet";
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Avhopparen av Viktor Grewe - en självbiografisk bok om vägen från utanförskap och kriminalitet till förändring. En gripande berättelse om hopp och andra chanser.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Avhopparen av Viktor Grewe - en självbiografisk bok om vägen från utanförskap och kriminalitet till förändring. En gripande berättelse om hopp och andra chanser.";
+      document.head.appendChild(meta);
+    }
+  }, []);
   const formatKrisLinks = (text: string) => {
     return text.split(/(KRIS)/g).map((part, index) => 
       part === 'KRIS' ? (
@@ -64,7 +77,7 @@ const Book = () => {
             <div className="flex justify-center">
               <img 
                 src={bookCover}
-                alt="Avhopparen - En sann berättelse"
+                alt="Avhopparen - En sann berättelse av Viktor Grewe - bok om vägen från kriminalitet"
                 className="w-80 h-auto shadow-elegant rounded-lg"
               />
             </div>

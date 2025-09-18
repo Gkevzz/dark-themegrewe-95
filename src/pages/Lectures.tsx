@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -5,6 +6,19 @@ import { Separator } from "@/components/ui/separator";
 import Navigation from "@/components/Navigation";
 
 const Lectures = () => {
+  useEffect(() => {
+    document.title = "Boka Viktor Grewe som Föreläsare | Förebyggande mot kriminalitet";
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Boka Viktor Grewe för inspirerande föreläsningar om utanförskap, kriminalitet och förändring. Mentorskap och workshops för skolor, myndigheter och organisationer.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Boka Viktor Grewe för inspirerande föreläsningar om utanförskap, kriminalitet och förändring. Mentorskap och workshops för skolor, myndigheter och organisationer.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

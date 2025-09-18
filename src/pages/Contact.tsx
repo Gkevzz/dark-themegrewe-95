@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -5,6 +6,19 @@ import { Mail, Phone, MapPin, Calendar } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Contact = () => {
+  useEffect(() => {
+    document.title = "Kontakta Viktor Grewe | Boka föreläsare & mentorskap";
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Kontakta Viktor Grewe för att boka föreläsningar, workshops eller mentorskap. Förebyggande arbete mot kriminalitet för skolor, myndigheter och organisationer.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Kontakta Viktor Grewe för att boka föreläsningar, workshops eller mentorskap. Förebyggande arbete mot kriminalitet för skolor, myndigheter och organisationer.";
+      document.head.appendChild(meta);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />

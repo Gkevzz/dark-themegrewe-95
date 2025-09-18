@@ -9,12 +9,12 @@ const Hero = () => {
       <div className="absolute inset-0 z-0">
         <img 
           src={desktopHero}
-          alt="Viktor Grewe hero background"
+          alt="Viktor Grewe - författare och föreläsare om kriminalitet och förändring"
           className="hidden md:block w-full h-full object-cover"
         />
        <img 
   src={mobileHero}
-  alt="Viktor Grewe hero background mobile"
+  alt="Viktor Grewe - författare till Avhopparen och föreläsare"
   className="block md:hidden absolute inset-0 w-full h-full object-cover object-center"
 />
         {/* Dark overlay for better text contrast */}
