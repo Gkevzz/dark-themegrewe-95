@@ -52,8 +52,8 @@ const Lectures = () => {
           <CardContent className="space-y-6">
             <div className="space-y-4 font-body text-muted-foreground leading-relaxed">
               <p>
-             Viktor Grewe delar sin egen resa från kriminalitet till ett konstruktivt liv och ger konkreta insikter om hur unga kan lämna destruktiva mönster. 
-             Föreläsningarna kombinerar personliga erfarenheter med konkreta exempel från hans arbete på KRIS.
+             Med sina föreläsningar, digitala sessioner och personliga mentorskap ger Viktor Grewe insikter och praktiska råd 
+            som hjälper unga och organisationer att bryta destruktiva mönster och skapa varaktig förändring.
               </p>
             </div>
           </CardContent>
