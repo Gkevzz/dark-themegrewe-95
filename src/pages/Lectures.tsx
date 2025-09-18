@@ -94,50 +94,6 @@ const Lectures = () => {
           </CardContent>
         </Card>
 
-        {/* Testimonials */}
-        <Card className="shadow-soft">
-          <CardHeader>
-            <CardTitle className="font-display text-2xl text-foreground">
-              Vad deltagarna säger
-            </CardTitle>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <blockquote className="font-body text-muted-foreground leading-relaxed">
-              <p className="mb-4">
-                "Viktors berättelse gjorde stort intryck på eleverna. Hans ärlighet och autenticitet skapade en djup 
-                reflektion kring val och konsekvenser."
-              </p>
-              <footer className="text-sm text-accent font-medium">
-                — Rektor, Gymnasieskola Stockholm
-              </footer>
-            </blockquote>
-            
-            <Separator />
-            
-            <blockquote className="font-body text-muted-foreground leading-relaxed">
-              <p className="mb-4">
-                "En kraftfull föreläsning som visade att förändring alltid är möjlig. Viktors erfarenheter gav oss värdefulla insikter för 
-                hur vi kan förbättra vårt sociala arbete."
-              </p>
-              <footer className="text-sm text-accent font-medium">
-                — Socialsekreterare, Stockholms stad
-              </footer>
-            </blockquote>
-            
-            <Separator />
-            
-            <blockquote className="font-body text-muted-foreground leading-relaxed">
-              <p className="mb-4">
-                "Viktor levererade precis vad vi behövde - en ärlig berättelse utan 
-                romantisering, men med hopp och konkreta exempel på förändring."
-              </p>
-              <footer className="text-sm text-accent font-medium">
-                — Ungdomsorganisation
-              </footer>
-            </blockquote>
-          </CardContent>
-        </Card>
-
         {/* What we offer */}
         <Card className="shadow-soft">
           <CardHeader>
@@ -222,6 +178,50 @@ const Lectures = () => {
                 </p>
               </div>
             </div>
+          </CardContent>
+        </Card>
+
+        {/* Testimonials */}
+        <Card className="shadow-soft">
+          <CardHeader>
+            <CardTitle className="font-display text-2xl text-foreground">
+              Vad deltagarna säger
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-6">
+            <blockquote className="font-body text-muted-foreground leading-relaxed">
+              <p className="mb-4">
+                "Viktors berättelse gjorde stort intryck på eleverna. Hans ärlighet och autenticitet skapade en djup 
+                reflektion kring val och konsekvenser."
+              </p>
+              <footer className="text-sm text-accent font-medium">
+                — Rektor, Gymnasieskola Stockholm
+              </footer>
+            </blockquote>
+            
+            <Separator />
+            
+            <blockquote className="font-body text-muted-foreground leading-relaxed">
+              <p className="mb-4">
+                "En kraftfull föreläsning som visade att förändring alltid är möjlig. Viktors erfarenheter gav oss värdefulla insikter för 
+                hur vi kan förbättra vårt sociala arbete."
+              </p>
+              <footer className="text-sm text-accent font-medium">
+                — Socialsekreterare, Stockholms stad
+              </footer>
+            </blockquote>
+            
+            <Separator />
+            
+            <blockquote className="font-body text-muted-foreground leading-relaxed">
+              <p className="mb-4">
+                "Viktor levererade precis vad vi behövde - en ärlig berättelse utan 
+                romantisering, men med hopp och konkreta exempel på förändring."
+              </p>
+              <footer className="text-sm text-accent font-medium">
+                — Ungdomsorganisation
+              </footer>
+            </blockquote>
           </CardContent>
         </Card>
 
