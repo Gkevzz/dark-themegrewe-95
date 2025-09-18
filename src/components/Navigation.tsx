@@ -14,7 +14,7 @@ const Navigation = () => {
 
   const navItems = [
     { name: "Startsida", path: "/" },
-    { name: "Föreläsningar", path: "/forelasningar" },
+    { name: "Föreläsningar & Tjänster", path: "/forelasningar" },
     { name: "Om författaren", path: "/om-forfattaren" },
     { name: "Boken", path: "/boken" },
     // { name: "Intervjuer/Poddar", path: "/intervjuer" }, // Hidden - change showInterviewsLink to true to show
