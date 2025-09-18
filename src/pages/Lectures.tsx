@@ -22,8 +22,9 @@ const Lectures = () => {
                 <span className="block text-gold-bright mt-2">för Föreläsningar</span>
               </h1>
               <p className="font-body text-lg md:text-xl text-cream-medium leading-relaxed max-w-3xl mx-auto">
-                Med sina föreläsningar, digitala sessioner och personliga mentorskap ger Viktor Grewe insikter och praktiska råd som hjälper unga 
-                och organisationer att bryta destruktiva mönster och skapa varaktig förändring.
+                Inspirerande föreläsningar om utanförskap, kriminalitet och hur unga kan hitta en väg ut.  
+                Bygger på Viktor Grewes egna erfarenheter, hans arbete på KRIS och frivården samt studier till socialpedagog.
+
 
               </p>
             </div>
