@@ -66,7 +66,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-display font-semibold text-foreground">Email</h3>
                     <p className="font-body text-muted-foreground">
-                      viktor.grewe@hotmail.com
+                      viktorsforelasning@gmail.com
                     </p>
                     <p className="font-body text-sm text-muted-foreground">
                       För bokningar och allmänna frågor
@@ -125,7 +125,7 @@ const Contact = () => {
               
               <div className="pt-4 border-t border-border/20">
                 <p className="font-body text-foreground text-center">
-                  Kontakta <a href="mailto:viktor.grewe@hotmail.com" className="text-accent hover:underline font-medium">viktor.grewe@hotmail.com</a> för bokningar
+                  Kontakta <a href="mailto:viktorsforelasning@gmail.com" className="text-accent hover:underline font-medium">viktor.grewe@hotmail.com</a> för bokningar
                 </p>
               </div>
             </CardContent>
