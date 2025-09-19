@@ -125,7 +125,7 @@ const Contact = () => {
               
               <div className="pt-4 border-t border-border/20">
                 <p className="font-body text-foreground text-center">
-                  Kontakta <a href="mailto:viktorsforelasning@gmail.com" className="text-accent hover:underline font-medium">viktor.grewe@hotmail.com</a> för bokningar
+                  Kontakta <a href="mailto:viktorsforelasning@gmail.com" className="text-accent hover:underline font-medium">viktorsforelasning@gmail.com</a> för bokningar
                 </p>
               </div>
             </CardContent>
