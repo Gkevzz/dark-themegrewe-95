@@ -149,7 +149,7 @@ const About = () => {
             </div>
             
             <div className="pt-4">
-              <Button asChild variant="outline" className="font-body">
+              <Button asChild className="font-body bg-gradient-gold hover:opacity-90 transition-all duration-300 shadow-gold text-navy-dark">
                 <a href="/boken">Läs mer om boken</a>
               </Button>
             </div>
