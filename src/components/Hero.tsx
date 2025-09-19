@@ -53,7 +53,7 @@ const Hero = () => {
       asChild 
       className="font-body text-sm px-6 py-2 bg-gradient-gold text-black hover:opacity-90 transition-all duration-300 shadow-gold md:text-base md:px-8 md:py-3"
     >
-      <a href="/forelasningar">Boka föreläsning</a>
+      <a href="/forelasningar">Läs mer om föreläsningar</a>
     </Button>
           </div>
         </div>
