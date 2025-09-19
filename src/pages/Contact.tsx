@@ -216,8 +216,7 @@ const Contact = () => {
             
             <Button 
               asChild 
-              variant="outline" 
-              className="font-body"
+              className="font-body bg-gradient-gold hover:opacity-90 transition-all duration-300 shadow-gold text-navy-dark"
             >
               <a 
                 href="https://www.kris.a.se" 
