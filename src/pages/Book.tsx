@@ -8,15 +8,24 @@ import Navigation from "@/components/Navigation";
 
 const Book = () => {
   useEffect(() => {
-    document.title = "Avhopparen - Viktor Grewe | En sann berättelse";
+    document.title = "Avhopparen Viktor Grewe | Boken om kriminalitet & förändring";
     const metaDescription = document.querySelector("meta[name='description']");
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Avhopparen av Viktor Grewe - en gripande självbiografi om vägen från kriminalitet till förändring. Köp boken och läs Viktors sanna berättelse.");
+      metaDescription.setAttribute("content", "Viktor Grewe Avhopparen - Läs självbiografin om vägen från kriminalitet. Köp boken som berör. Recension & utdrag ur Avhopparen av Viktor Grewe.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Avhopparen av Viktor Grewe - en gripande självbiografi om vägen från kriminalitet till förändring. Köp boken och läs Viktors sanna berättelse.";
+      meta.content = "Viktor Grewe Avhopparen - Läs självbiografin om vägen från kriminalitet. Köp boken som berör. Recension & utdrag ur Avhopparen av Viktor Grewe.";
       document.head.appendChild(meta);
+    }
+    
+    // Add canonical tag
+    const existingCanonical = document.querySelector("link[rel='canonical']");
+    if (!existingCanonical) {
+      const canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      canonical.href = "https://www.viktor-grewe.se/boken";
+      document.head.appendChild(canonical);
     }
   }, []);
   const formatKrisLinks = (text: string) => {

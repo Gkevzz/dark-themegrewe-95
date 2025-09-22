@@ -7,15 +7,24 @@ import Navigation from "@/components/Navigation";
 
 const Contact = () => {
   useEffect(() => {
-    document.title = "Kontakta Viktor Grewe | Boka föreläsare & mentorskap";
+    document.title = "Kontakta Viktor Grewe | Boka föreläsningar & mentorskap 2025";
     const metaDescription = document.querySelector("meta[name='description']");
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Kontakta Viktor Grewe för att boka föreläsningar, workshops eller mentorskap. Förebyggande arbete mot kriminalitet för skolor, myndigheter och organisationer.");
+      metaDescription.setAttribute("content", "Kontakta Viktor Grewe Avhopparen. Boka föreläsningar 2025. viktorsforelasning@gmail.com. Expert på kriminalitet & förebyggande arbete.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Kontakta Viktor Grewe för att boka föreläsningar, workshops eller mentorskap. Förebyggande arbete mot kriminalitet för skolor, myndigheter och organisationer.";
+      meta.content = "Kontakta Viktor Grewe Avhopparen. Boka föreläsningar 2025. viktorsforelasning@gmail.com. Expert på kriminalitet & förebyggande arbete.";
       document.head.appendChild(meta);
+    }
+    
+    // Add canonical tag
+    const existingCanonical = document.querySelector("link[rel='canonical']");
+    if (!existingCanonical) {
+      const canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      canonical.href = "https://www.viktor-grewe.se/kontakt";
+      document.head.appendChild(canonical);
     }
   }, []);
 

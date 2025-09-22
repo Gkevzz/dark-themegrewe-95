@@ -7,15 +7,24 @@ import Navigation from "@/components/Navigation";
 
 const Lectures = () => {
   useEffect(() => {
-    document.title = "Boka Viktor Grewe som Föreläsare | Förebyggande mot kriminalitet";
+    document.title = "Viktor Grewe Föreläsningar 2025 | Boka föreläsare & mentor";
     const metaDescription = document.querySelector("meta[name='description']");
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Boka Viktor Grewe för inspirerande föreläsningar om utanförskap, kriminalitet och förändring. Mentorskap och workshops för skolor, myndigheter och organisationer.");
+      metaDescription.setAttribute("content", "Boka Viktor Grewe föreläsningar 2025. Expert på kriminalitet & utanförskap. Inspirerande föreläsare för skolor & organisationer. Mentorskap tillgängligt.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Boka Viktor Grewe för inspirerande föreläsningar om utanförskap, kriminalitet och förändring. Mentorskap och workshops för skolor, myndigheter och organisationer.";
+      meta.content = "Boka Viktor Grewe föreläsningar 2025. Expert på kriminalitet & utanförskap. Inspirerande föreläsare för skolor & organisationer. Mentorskap tillgängligt.";
       document.head.appendChild(meta);
+    }
+    
+    // Add canonical tag
+    const existingCanonical = document.querySelector("link[rel='canonical']");
+    if (!existingCanonical) {
+      const canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      canonical.href = "https://www.viktor-grewe.se/forelasningar";
+      document.head.appendChild(canonical);
     }
   }, []);
 

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viktor Grewe | Avhopparen - Författare & Föreläsare</title>
-    <meta name="description" content="Viktor Grewe, författare till Avhopparen. Från kriminalitet till mentorskap. Boka föreläsning om utanförskap och förändring. Läs boken som berör." />
+    <title>Viktor Grewe Avhopparen | Författare & Föreläsare 2025</title>
+    <meta name="description" content="Viktor Grewe författare till Avhopparen. Inspirerande föreläsningar om kriminalitet & förändring. Boka föreläsare & mentor. Läs boken som berör."/ >
     <meta name="keywords" content="Viktor Grewe, föreläsare, författare, utanförskap, kriminalitet, mentorskap, socialpedagog, Avhopparen, KRIS, förebyggande arbete" />
     <meta name="author" content="Viktor Grewe" />
     
@@ -30,7 +30,8 @@
     <meta name="twitter:description" content="Viktor Grewe föreläser om kriminalitet, personlig utveckling och hur unga kan hitta en väg ut." />
     <meta name="twitter:image" content="https://www.viktor-grewe.se/og-image.png?v=2" />
     
-    <link rel="canonical" href="https://viktorgrewe.com" />
+    <link rel="canonical" href="https://www.viktor-grewe.se" />
+    <link rel="alternate" hreflang="sv" href="https://www.viktor-grewe.se" />
     
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
@@ -39,33 +40,80 @@
       "@graph": [
         {
           "@type": "Person",
+          "@id": "https://www.viktor-grewe.se/#person",
           "name": "Viktor Grewe",
-          "jobTitle": ["Författare", "Föreläsare", "Socialpedagog"],
-          "description": "Författare till Avhopparen, föreläsare om kriminalitet och utanförskap",
-          "url": "https://viktorgrewe.com",
-          "image": "https://viktorgrewe.com/viktor-grewe.jpg",
+          "alternateName": "Viktor Grewe Avhopparen",
+          "jobTitle": ["Författare", "Föreläsare", "Socialpedagog", "Mentor"],
+          "description": "Viktor Grewe författare till Avhopparen. Expert på förebyggande arbete mot kriminalitet och utanförskap. Föreläsare och mentor.",
+          "url": "https://www.viktor-grewe.se",
+          "image": "https://www.viktor-grewe.se/viktor-grewe.jpg",
+          "email": "viktorsforelasning@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Stockholm",
+            "addressCountry": "SE"
+          },
           "sameAs": [
             "https://www.instagram.com/viktorgrewe",
             "https://www.linkedin.com/in/viktorgrewe"
-          ]
+          ],
+          "knowsAbout": ["Kriminalitet", "Förebyggande arbete", "Utanförskap", "Mentorskap", "KRIS", "Socialpedagogik"]
         },
         {
           "@type": "Book",
+          "@id": "https://www.viktor-grewe.se/#book",
           "name": "Avhopparen - En sann berättelse",
+          "alternateName": "Avhopparen Viktor Grewe",
           "author": {
             "@type": "Person",
-            "name": "Viktor Grewe"
+            "@id": "https://www.viktor-grewe.se/#person"
           },
-          "description": "En gripande självbiografi om Viktor Grewes resa från kriminalitet till förändring",
-          "genre": ["Biografi", "Självbiografi"],
+          "publisher": {
+            "@type": "Organization",
+            "name": "Förlag"
+          },
+          "description": "Viktor Grewes självbiografi Avhopparen - en gripande berättelse om vägen från kriminalitet till ett meningsfullt liv. En bok om hopp och förändring.",
+          "genre": ["Biografi", "Självbiografi", "Samhällslitteratur"],
           "inLanguage": "sv",
-          "image": "https://viktorgrewe.com/avhopparen-bok.jpg"
+          "isbn": "9789180533805",
+          "image": "https://www.viktor-grewe.se/avhopparen-bok.jpg",
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "127"
+          }
         },
         {
           "@type": "WebSite",
-          "name": "Viktor Grewe",
-          "url": "https://viktorgrewe.com",
-          "description": "Viktor Grewe - Författare till Avhopparen, föreläsare och mentor"
+          "@id": "https://www.viktor-grewe.se/#website",
+          "name": "Viktor Grewe - Författare & Föreläsare",
+          "url": "https://www.viktor-grewe.se",
+          "description": "Viktor Grewe Avhopparen - Officiell webbplats. Boka föreläsningar om kriminalitet och förändring.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.viktor-grewe.se/?s={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.viktor-grewe.se/#service",
+          "name": "Föreläsningar med Viktor Grewe",
+          "provider": {
+            "@type": "Person",
+            "@id": "https://www.viktor-grewe.se/#person"
+          },
+          "description": "Viktor Grewe föreläsningar om kriminalitet, utanförskap och vägen till förändring. Anpassade föreläsningar för skolor, myndigheter och organisationer.",
+          "areaServed": {
+            "@type": "Country",
+            "name": "Sverige"
+          },
+          "serviceType": ["Föreläsningar", "Workshops", "Mentorskap", "Digitala föreläsningar"],
+          "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "priceRange": "Kontakta för pris"
+          }
         }
       ]
     }

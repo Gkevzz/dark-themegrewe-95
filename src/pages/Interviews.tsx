@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -5,6 +6,27 @@ import { ExternalLink, Play, Headphones } from "lucide-react";
 import Navigation from "@/components/Navigation";
 
 const Interviews = () => {
+  useEffect(() => {
+    document.title = "Viktor Grewe Intervjuer & Media | Avhopparen författare";
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", "Viktor Grewe intervjuer, poddar & media. Författaren till Avhopparen berättar om kriminalitet & förändring. Se & lyssna på Viktor Grewe.");
+    } else {
+      const meta = document.createElement("meta");
+      meta.name = "description";
+      meta.content = "Viktor Grewe intervjuer, poddar & media. Författaren till Avhopparen berättar om kriminalitet & förändring. Se & lyssna på Viktor Grewe.";
+      document.head.appendChild(meta);
+    }
+    
+    // Add canonical tag
+    const existingCanonical = document.querySelector("link[rel='canonical']");
+    if (!existingCanonical) {
+      const canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      canonical.href = "https://www.viktor-grewe.se/intervjuer";
+      document.head.appendChild(canonical);
+    }
+  }, []);
   // Toggle this to show/hide the Featured Interviews section
   const showFeaturedInterviews = false;
   

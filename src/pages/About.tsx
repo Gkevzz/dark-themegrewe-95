@@ -8,15 +8,24 @@ import authorHeroMobile from "@/assets/author-hero-mobile.webp";
 
 const About = () => {
   useEffect(() => {
-    document.title = "Om Viktor Grewe - Författare till Avhopparen | Föreläsare & Socialpedagog";
+    document.title = "Om Viktor Grewe Avhopparen | Författare & föreläsare";
     const metaDescription = document.querySelector("meta[name='description']");
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Viktor Grewe - från kriminalitet till socialpedagog. Författare till boken Avhopparen. Arbetar med KRIS och frivården för att hjälpa unga lämna utanförskap.");
+      metaDescription.setAttribute("content", "Viktor Grewe Avhopparen - Från kriminalitet till mentor. Författare, föreläsare & socialpedagog. Läs om Viktor Grewes inspirerande livsresa.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Viktor Grewe - från kriminalitet till socialpedagog. Författare till boken Avhopparen. Arbetar med KRIS och frivården för att hjälpa unga lämna utanförskap.";
+      meta.content = "Viktor Grewe Avhopparen - Från kriminalitet till mentor. Författare, föreläsare & socialpedagog. Läs om Viktor Grewes inspirerande livsresa.";
       document.head.appendChild(meta);
+    }
+    
+    // Add canonical tag
+    const existingCanonical = document.querySelector("link[rel='canonical']");
+    if (!existingCanonical) {
+      const canonical = document.createElement("link");
+      canonical.rel = "canonical";
+      canonical.href = "https://www.viktor-grewe.se/om-viktor";
+      document.head.appendChild(canonical);
     }
   }, []);
 
