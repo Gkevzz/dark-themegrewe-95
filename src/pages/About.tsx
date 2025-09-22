@@ -29,12 +29,12 @@ const About = () => {
         {/* Background Images */}
         <img 
           src={authorHeroMobile}
-          alt="Viktor Grewe - författare och föreläsare om kriminalitet och utanförskap"
+          alt="Viktor Grewe författare till Avhopparen"
           className="absolute inset-0 w-full h-full object-cover block md:hidden"
         />
         <img 
           src={authorHeroDesktop}
-          alt="Viktor Grewe - författare till Avhopparen och föreläsare"
+          alt="Viktor Grewe föreläsare och mentor"
           className="absolute inset-0 w-full h-full object-cover hidden md:block"
         />
         

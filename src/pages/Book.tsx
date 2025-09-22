@@ -8,14 +8,14 @@ import Navigation from "@/components/Navigation";
 
 const Book = () => {
   useEffect(() => {
-    document.title = "Avhopparen - En sann berättelse av Viktor Grewe | Bok om kriminalitet";
+    document.title = "Avhopparen - Viktor Grewe | En sann berättelse";
     const metaDescription = document.querySelector("meta[name='description']");
     if (metaDescription) {
-      metaDescription.setAttribute("content", "Avhopparen av Viktor Grewe - en självbiografisk bok om vägen från utanförskap och kriminalitet till förändring. En gripande berättelse om hopp och andra chanser.");
+      metaDescription.setAttribute("content", "Avhopparen av Viktor Grewe - en gripande självbiografi om vägen från kriminalitet till förändring. Köp boken och läs Viktors sanna berättelse.");
     } else {
       const meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = "Avhopparen av Viktor Grewe - en självbiografisk bok om vägen från utanförskap och kriminalitet till förändring. En gripande berättelse om hopp och andra chanser.";
+      meta.content = "Avhopparen av Viktor Grewe - en gripande självbiografi om vägen från kriminalitet till förändring. Köp boken och läs Viktors sanna berättelse.";
       document.head.appendChild(meta);
     }
   }, []);
@@ -77,7 +77,7 @@ const Book = () => {
             <div className="flex justify-center">
               <img 
                 src={bookCover}
-                alt="Avhopparen - En sann berättelse av Viktor Grewe - bok om vägen från kriminalitet"
+                alt="Avhopparen bokomslag av Viktor Grewe"
                 className="w-80 h-auto shadow-elegant rounded-lg"
               />
             </div>
